@@ -20,7 +20,7 @@
       </li>
     </ul>
 
-    <!-- Fenêtre modale pour afficher les détails -->
+    
     <div
       v-if="modalVisible"
       class="fixed top-0 left-0 w-full h-full flex items-center justify-center"
@@ -112,14 +112,14 @@ export default {
           const response = await axios.get(episodeURL);
           const episode = response.data;
 
-          // Récupérez les données des personnages associés à l'épisode
+         
           const characterData = [];
           for (const characterURL of episode.characters) {
             const characterResponse = await axios.get(characterURL);
             characterData.push(characterResponse.data);
           }
 
-          episode.charactersData = characterData; // Ajoutez les données de personnage à l'épisode
+          episode.charactersData = characterData; 
           this.episodes.push(episode);
         } catch (error) {
           console.error("Erreur lors de la récupération des épisodes :", error);
