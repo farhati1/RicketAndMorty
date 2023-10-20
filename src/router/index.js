@@ -16,11 +16,7 @@ const router = createRouter({
       path: "/",
       component: Characters,
     },
-    {
-      path: "/character/:id",
-      component: CharactersDetails,
-      props: true, // Passez l'ID du personnage en tant que propriété
-    },
+   
   ],
 });
 
