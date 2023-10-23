@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import Characters from "../components/Characters.vue";
-import CharactersDetails from "../components/CharactersDetails.vue";
+
 
 
 const router = createRouter({
